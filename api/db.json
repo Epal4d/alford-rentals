@@ -12,8 +12,8 @@
         },
         {
             "id":3,
-            "email": "example@example.com",
-            "password": "examplepassword"
+            "email": "cedric@example.com",
+            "password": "cedricspassword"
         }
     ], 
     "types":[
