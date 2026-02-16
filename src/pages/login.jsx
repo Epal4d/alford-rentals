@@ -1,16 +1,36 @@
 import { useState } from "react";
 
+
 export const Login = () => {
     //create state
     const [email,setEmail] = useState("")
     const [password,setPassword] = useState("")
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
 
-        console.log("email", email)
-        console.log("Password", password)
+        const res = await fetch(`http://localhost:8088/users?email=${email}`)
+        const users = await res.json()
 
+        let foundUser;
+        //check if user is found
+            if (users.length > 0) {
+                 foundUser = users[0]
+                    } else 
+                        {
+                            window.alert("Email not registered")
+                            return;
+                        }
+            //if user found check if password matches
+            if (foundUser.password === password) {
+                // if matches save user to local storage
+                localStorage.setItem("current_user",JSON.stringify(foundUser))
+                // send user to dashboard
+                //navigate("/dashboard")
+            } else
+                    {
+                     window.alert("incorrect password, Try again")
+                    }
 
     }
 
