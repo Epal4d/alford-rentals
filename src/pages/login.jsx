@@ -1,10 +1,14 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 
 
 export const Login = () => {
     //create state
     const [email,setEmail] = useState("")
     const [password,setPassword] = useState("")
+
+    const navigate = useNavigate()
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -26,7 +30,7 @@ export const Login = () => {
                 // if matches save user to local storage
                 localStorage.setItem("current_user",JSON.stringify(foundUser))
                 // send user to dashboard
-                //navigate("/dashboard")
+                navigate("/dashboard")
             } else
                     {
                      window.alert("incorrect password, Try again")
