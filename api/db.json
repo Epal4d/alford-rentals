@@ -1,299 +1,297 @@
 {
-    "users":[
-        {
-            "id": 1,
-            "email": "john@example.com",
-            "password": "password"
-        },
-        {
-            "id": 2,
-            "email": "evan@example.com",
-            "password": "evanspassword"
-        },
-        {
-            "id":3,
-            "email": "cedric@example.com",
-            "password": "cedricspassword"
-        }
-    ], 
-    "types":[
-        {
-            "id":1,
-            "name": "Single-Family Home"
-        },
-        {
-            "id":2,
-            "name": "Duplex"
-        },
-        {
-            "id":3,
-            "name": "Apartment"
-        },
-        {
-            "id":4,
-            "name": "Condo"
-        },
-        {
-            "id":5,
-            "name": "Office"
-        }
-
-    ],
-    "properties":[
-        {
-            "id":1,
-            "userId": 2,
-            "typeId": 3,
-            "name": "Nashville Way",
-            "city": "Nashville",
-            "address": "1234 Nashville Way",
-            "state": "Tennessee",
-            "zip": "37829"   
-        },
-        {
-            "id": 2,
-            "userId": 2,
-            "typeId": 2,
-            "name": "Riverside Duplex",
-            "city": "Nashville",
-            "address": "890 Riverside Dr",
-            "state": "Tennessee",
-            "zip": "37201"
-        },
-        {
-            "id": 3,
-            "userId": 2,
-            "typeId": 1,
-            "name": "Elm Street House",
-            "city": "Franklin",
-            "address": "456 Elm Street",
-            "state": "Tennessee",
-            "zip": "37064"
-        },
-        {
-            "id": 4,
-            "userId": 1,
-            "typeId": 3,
-            "name": "Magnolia Apartments",
-            "city": "Murfreesboro",
-            "address": "2200 Magnolia Blvd",
-            "state": "Tennessee",
-            "zip": "37130"
-        },
-        {
-            "id": 5,
-            "userId": 1,
-            "typeId": 4,
-            "name": "Downtown Condos",
-            "city": "Nashville",
-            "address": "100 Broadway Ave",
-            "state": "Tennessee",
-            "zip": "37203"
-        },
-        {
-            "id": 6,
-            "userId": 3,
-            "typeId": 5,
-            "name": "Commerce Park Office",
-            "city": "Brentwood",
-            "address": "750 Commerce Way",
-            "state": "Tennessee",
-            "zip": "37027"
-        }
-    ],
-    "units":[
-        {
-            "id":1,
-            "propertyId": 1,
-            "name": "unit A",
-            "rentPrice": 1200,
-            "bed": 2,
-            "bath":3,
-            "available": false
-        },
-        {
-            "id": 2,
-            "propertyId": 1,
-            "name": "Unit B",
-            "rentPrice": 1400,
-            "bed": 3,
-            "bath": 2,
-            "available": true
-        },
-        {
-            "id": 3,
-            "propertyId": 1,
-            "name": "Unit C",
-            "rentPrice": 950,
-            "bed": 1,
-            "bath": 1,
-            "available": false
-        },
-        {
-            "id": 4,
-            "propertyId": 2,
-            "name": "Unit A",
-            "rentPrice": 1600,
-            "bed": 3,
-            "bath": 2,
-            "available": false
-        },
-        {
-            "id": 5,
-            "propertyId": 2,
-            "name": "Unit B",
-            "rentPrice": 1600,
-            "bed": 3,
-            "bath": 2,
-            "available": true
-        },
-        {
-            "id": 6,
-            "propertyId": 3,
-            "name": "Main",
-            "rentPrice": 2200,
-            "bed": 4,
-            "bath": 3,
-            "available": false
-        },
-        {
-            "id": 7,
-            "propertyId": 4,
-            "name": "Unit 101",
-            "rentPrice": 1100,
-            "bed": 2,
-            "bath": 1,
-            "available": false
-        },
-        {
-            "id": 8,
-            "propertyId": 4,
-            "name": "Unit 102",
-            "rentPrice": 1100,
-            "bed": 2,
-            "bath": 1,
-            "available": true
-        },
-        {
-            "id": 9,
-            "propertyId": 4,
-            "name": "Unit 201",
-            "rentPrice": 1350,
-            "bed": 3,
-            "bath": 2,
-            "available": false
-        },
-        {
-            "id": 10,
-            "propertyId": 4,
-            "name": "Unit 202",
-            "rentPrice": 1350,
-            "bed": 3,
-            "bath": 2,
-            "available": true
-        },
-        {
-            "id": 11,
-            "propertyId": 5,
-            "name": "Condo 1A",
-            "rentPrice": 1800,
-            "bed": 2,
-            "bath": 2,
-            "available": false
-        },
-        {
-            "id": 12,
-            "propertyId": 5,
-            "name": "Condo 2A",
-            "rentPrice": 2100,
-            "bed": 3,
-            "bath": 2,
-            "available": true
-        },
-        {
-            "id": 13,
-            "propertyId": 6,
-            "name": "Suite 100",
-            "rentPrice": 2500,
-            "bed": 0,
-            "bath": 1,
-            "available": false
-        },
-        {
-            "id": 14,
-            "propertyId": 6,
-            "name": "Suite 200",
-            "rentPrice": 3000,
-            "bed": 0,
-            "bath": 2,
-            "available": true
-        }
-    ],
-    "tenants":[
-        {
-            "id":1,
-            "unitId": 1,
-            "name": "Micheal Jordan",
-            "email": "MichealJordan@example.com",
-            "phone": "615-272-2783",
-            "moveInDate": "12-12-2020"
-        },
-        {
-            "id": 2,
-            "unitId": 3,
-            "name": "Sarah Williams",
-            "email": "sarahw@example.com",
-            "phone": "615-555-1234",
-            "moveInDate": "2023-03-01"
-        },
-        {
-            "id": 3,
-            "unitId": 4,
-            "name": "James Carter",
-            "email": "jcarter@example.com",
-            "phone": "615-555-5678",
-            "moveInDate": "2022-06-15"
-        },
-        {
-            "id": 4,
-            "unitId": 6,
-            "name": "Angela Davis",
-            "email": "adavis@example.com",
-            "phone": "615-555-9012",
-            "moveInDate": "2021-08-01"
-        },
-        {
-            "id": 5,
-            "unitId": 7,
-            "name": "Robert Kim",
-            "email": "rkim@example.com",
-            "phone": "615-555-3456",
-            "moveInDate": "2024-01-15"
-        },
-        {
-            "id": 6,
-            "unitId": 9,
-            "name": "Lisa Hernandez",
-            "email": "lhernandez@example.com",
-            "phone": "615-555-7890",
-            "moveInDate": "2023-09-01"
-        },
-        {
-            "id": 7,
-            "unitId": 11,
-            "name": "David Park",
-            "email": "dpark@example.com",
-            "phone": "615-555-2345",
-            "moveInDate": "2024-05-01"
-        },
-        {
-            "id": 8,
-            "unitId": 13,
-            "name": "Westfield Corp",
-            "email": "leasing@westfieldcorp.com",
-            "phone": "615-555-6789",
-            "moveInDate": "2023-01-01"
-        }
-    ]
-   
+  "users": [
+    {
+      "id": 1,
+      "email": "john@example.com",
+      "password": "password"
+    },
+    {
+      "id": 2,
+      "email": "evan@example.com",
+      "password": "evanspassword"
+    },
+    {
+      "id": 3,
+      "email": "cedric@example.com",
+      "password": "cedricspassword"
+    }
+  ],
+  "types": [
+    {
+      "id": 1,
+      "name": "Single-Family Home"
+    },
+    {
+      "id": 2,
+      "name": "Duplex"
+    },
+    {
+      "id": 3,
+      "name": "Apartment"
+    },
+    {
+      "id": 4,
+      "name": "Condo"
+    },
+    {
+      "id": 5,
+      "name": "Office"
+    }
+  ],
+  "properties": [
+    {
+      "id": 1,
+      "userId": 2,
+      "typeId": 3,
+      "name": "Nashville Way",
+      "city": "Nashville",
+      "address": "1234 Nashville Way",
+      "state": "Tennessee",
+      "zip": "37829"
+    },
+    {
+      "id": 2,
+      "userId": 2,
+      "typeId": 2,
+      "name": "Riverside Duplex",
+      "city": "Nashville",
+      "address": "890 Riverside Dr",
+      "state": "Tennessee",
+      "zip": "37201"
+    },
+    {
+      "id": 3,
+      "userId": 2,
+      "typeId": 1,
+      "name": "Elm Street House",
+      "city": "Franklin",
+      "address": "456 Elm Street",
+      "state": "Tennessee",
+      "zip": "37064"
+    },
+    {
+      "id": 4,
+      "userId": 1,
+      "typeId": 3,
+      "name": "Magnolia Apartments",
+      "city": "Murfreesboro",
+      "address": "2200 Magnolia Blvd",
+      "state": "Tennessee",
+      "zip": "37130"
+    },
+    {
+      "id": 5,
+      "userId": 1,
+      "typeId": 4,
+      "name": "Downtown Condos",
+      "city": "Nashville",
+      "address": "100 Broadway Ave",
+      "state": "Tennessee",
+      "zip": "37203"
+    },
+    {
+      "id": 6,
+      "userId": 3,
+      "typeId": 5,
+      "name": "Commerce Park Office",
+      "city": "Brentwood",
+      "address": "750 Commerce Way",
+      "state": "Tennessee",
+      "zip": "37027"
+    }
+  ],
+  "units": [
+    {
+      "id": 1,
+      "propertyId": 1,
+      "name": "unit A",
+      "rentPrice": 1200,
+      "bed": 2,
+      "bath": 3,
+      "available": false
+    },
+    {
+      "id": 2,
+      "propertyId": 1,
+      "name": "Unit B",
+      "rentPrice": 1400,
+      "bed": 3,
+      "bath": 2,
+      "available": true
+    },
+    {
+      "id": 3,
+      "propertyId": 1,
+      "name": "Unit C",
+      "rentPrice": 950,
+      "bed": 1,
+      "bath": 1,
+      "available": false
+    },
+    {
+      "id": 4,
+      "propertyId": 2,
+      "name": "Unit A",
+      "rentPrice": 1600,
+      "bed": 3,
+      "bath": 2,
+      "available": false
+    },
+    {
+      "id": 5,
+      "propertyId": 2,
+      "name": "Unit B",
+      "rentPrice": 1600,
+      "bed": 3,
+      "bath": 2,
+      "available": true
+    },
+    {
+      "id": 6,
+      "propertyId": 3,
+      "name": "Main",
+      "rentPrice": 2200,
+      "bed": 4,
+      "bath": 3,
+      "available": false
+    },
+    {
+      "id": 7,
+      "propertyId": 4,
+      "name": "Unit 101",
+      "rentPrice": 1100,
+      "bed": 2,
+      "bath": 1,
+      "available": false
+    },
+    {
+      "id": 8,
+      "propertyId": 4,
+      "name": "Unit 102",
+      "rentPrice": 1100,
+      "bed": 2,
+      "bath": 1,
+      "available": true
+    },
+    {
+      "id": 9,
+      "propertyId": 4,
+      "name": "Unit 201",
+      "rentPrice": 1350,
+      "bed": 3,
+      "bath": 2,
+      "available": false
+    },
+    {
+      "id": 10,
+      "propertyId": 4,
+      "name": "Unit 202",
+      "rentPrice": 1350,
+      "bed": 3,
+      "bath": 2,
+      "available": true
+    },
+    {
+      "id": 11,
+      "propertyId": 5,
+      "name": "Condo 1A",
+      "rentPrice": 1800,
+      "bed": 2,
+      "bath": 2,
+      "available": false
+    },
+    {
+      "id": 12,
+      "propertyId": 5,
+      "name": "Condo 2A",
+      "rentPrice": 2100,
+      "bed": 3,
+      "bath": 2,
+      "available": true
+    },
+    {
+      "id": 13,
+      "propertyId": 6,
+      "name": "Suite 100",
+      "rentPrice": 2500,
+      "bed": 0,
+      "bath": 1,
+      "available": false
+    },
+    {
+      "id": 14,
+      "propertyId": 6,
+      "name": "Suite 200",
+      "rentPrice": 3000,
+      "bed": 0,
+      "bath": 2,
+      "available": true
+    }
+  ],
+  "tenants": [
+    {
+      "id": 1,
+      "unitId": 1,
+      "name": "Micheal Jordan",
+      "email": "MichealJordan@example.com",
+      "phone": "615-272-2783",
+      "moveInDate": "12-12-2020"
+    },
+    {
+      "id": 2,
+      "unitId": 3,
+      "name": "Sarah Williams",
+      "email": "sarahw@example.com",
+      "phone": "615-555-1234",
+      "moveInDate": "2023-03-01"
+    },
+    {
+      "id": 3,
+      "unitId": 4,
+      "name": "James Carter",
+      "email": "jcarter@example.com",
+      "phone": "615-555-5678",
+      "moveInDate": "2022-06-15"
+    },
+    {
+      "id": 4,
+      "unitId": 6,
+      "name": "Angela Davis",
+      "email": "adavis@example.com",
+      "phone": "615-555-9012",
+      "moveInDate": "2021-08-01"
+    },
+    {
+      "id": 5,
+      "unitId": 7,
+      "name": "Robert Kim",
+      "email": "rkim@example.com",
+      "phone": "615-555-3456",
+      "moveInDate": "2024-01-15"
+    },
+    {
+      "id": 6,
+      "unitId": 9,
+      "name": "Lisa Hernandez",
+      "email": "lhernandez@example.com",
+      "phone": "615-555-7890",
+      "moveInDate": "2023-09-01"
+    },
+    {
+      "id": 7,
+      "unitId": 11,
+      "name": "David Park",
+      "email": "dpark@example.com",
+      "phone": "615-555-2345",
+      "moveInDate": "2024-05-01"
+    },
+    {
+      "id": 8,
+      "unitId": 13,
+      "name": "Westfield Corp",
+      "email": "leasing@westfieldcorp.com",
+      "phone": "615-555-6789",
+      "moveInDate": "2023-01-01"
+    }
+  ]
 }

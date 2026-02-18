@@ -1,7 +1,8 @@
 import './App.css'
-import { Login } from './pages/login'
-import {Dashboard} from './pages/dashboard.jsx'
 import { Route, Routes } from 'react-router-dom'
+import { Login } from './pages/login'
+import { Dashboard } from './pages/dashboard.jsx'
+import { PropertyForm } from './pages/propertyForm.jsx'
 
 function App() {
  
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login/>}/>
           <Route path="/dashboard" element={<Dashboard/>}/>
+          <Route path="properties/create" element={<PropertyForm/>} />
       </Routes>
     
   )
