@@ -52,11 +52,11 @@
     {
       "id": 2,
       "userId": 2,
-      "typeId": 2,
-      "name": "Riverside Duplex",
-      "city": "Nashville",
+      "typeId": 3,
+      "name": "Riverside Apt.",
       "address": "890 Riverside Dr",
-      "state": "Tennessee",
+      "city": "New York",
+      "state": "New York",
       "zip": "37201"
     },
     {
